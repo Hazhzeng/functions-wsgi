@@ -1,0 +1,3 @@
+azure-functions
+Flask==1.1.1
+azf-wsgi==0.3.0
