@@ -12,7 +12,7 @@
         "put",
         "delete"
       ],
-      "route": "app/{*route}"
+      "route": "{*route}"
     },
     {
       "type": "http",
