@@ -34,5 +34,4 @@
 }
 ```
 
-3. Migrate your flask app into FlaskApp/ folder.
-4. Change module import statements, FlaskApp/app.py for guidance.
+3. Use Azure Functions Core Tools to debug your project locally (e.g. http://localhost:7071/hello/Chris)

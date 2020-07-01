@@ -1,3 +1,8 @@
+env*/
+venv*/
+.env*/
+.venv*/
+
 bin
 obj
 csx
@@ -20,7 +25,7 @@ project.lock.json
 /data
 .secrets
 appsettings.json
-local.settings.json
+# local.settings.json
 
 node_modules
 dist

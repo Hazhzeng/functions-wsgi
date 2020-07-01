@@ -1,3 +1,6 @@
-env/
+env*/
+venv*/
+.env*/
+.venv*/
 .python_packages/
 .vscode/
