@@ -36,3 +36,19 @@
 
 3. Migrate your flask app into FlaskApp/ folder.
 4. Change module import statements, FlaskApp/app.py for guidance.
+```python
+import azure.functions as func
+from FastapiApp import app
+
+def main(req: func.HttpRequest, context: func.Context) -> func.HttpResponse:
+    return func.AsgiMiddleware(app).handle(req, context)
+```
+or
+```python
+import azure.functions as func
+from FlaskApp import app
+
+def main(req: func.HttpRequest, context: func.Context) -> func.HttpResponse:
+    return func.WsgiMiddleware(app.wsgi_app).handle(req, context)
+
+```
